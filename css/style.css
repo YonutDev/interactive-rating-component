@@ -139,6 +139,11 @@ body {
     width: 13rem;
     min-height: 12rem;
   }
+  .rating-vote {
+    width: 30px;
+    height: 30px;
+    padding: 0.01px;
+  }
   .rating-submit {
     width: 13rem;
   }
