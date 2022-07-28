@@ -126,8 +126,8 @@ body {
     min-height: 14rem;
   }
   .rating-vote {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 35px;
     padding: 0.01px;
   }
   .rating-submit {
