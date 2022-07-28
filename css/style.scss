@@ -1,0 +1,159 @@
+body {
+    background: #141519;
+}
+
+// General elements properties
+
+.rating-title, .rated-title {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass";
+    font-weight: 700;
+}
+
+.rating-description, .rated-description {
+    color: hsl(217, 12%, 63%);
+    font-family: "Overpass";
+    font-weight: 400;
+    font-size: 15px;
+}
+
+// Rate card
+.rating, .rated {
+    background: rgb(23,30,40);
+    background: linear-gradient(0deg, rgba(23,30,40,1) 0%, rgba(35,42,52,1) 100%);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    max-width: 20rem;
+    min-height: 19rem;
+    padding: 2rem;    
+}
+
+// End of General elements properties
+
+// Before rating
+.rating-icon {
+    background: #262f38;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+}
+.rating-votes {
+    display:flex;
+    margin-top: 1.5rem;
+}
+.rating-vote + .rating-vote {
+    margin-left: 1rem;
+}
+.rating-vote {
+    background: #262f38;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    border-radius: 50%;
+
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+
+    font-family: "Overpass";
+    font-weight: 400;
+    font-size: 18px;
+
+    transition: .15s;
+    
+    &:hover {
+        background: hsl(0, 0%, 100%);
+        color:hsl(25, 97%, 53%); 
+    }
+}
+.rating-selected {
+    background: hsl(217, 12%, 63%);
+    color: #fff;
+}
+.rating-submit {
+    background: hsl(25, 97%, 53%);
+
+    border:0;
+    border-radius:30px;
+
+    margin-top: 1.5rem;
+    width: 20rem;
+    height: 3rem;
+    padding-top: .3rem;
+
+    color:#fff;
+    text-transform: uppercase;
+    line-height: 20px;
+
+    font-family: "Overpass";
+    font-weight: 700;
+    font-size: 18px;
+    
+	letter-spacing: 2px;
+
+    transition: .15s;
+
+    &:hover {
+        background: hsl(0, 0%, 100%);
+        color:hsl(25, 97%, 53%);
+    }
+} 
+
+// After rating
+.rated {
+    display: none;
+    text-align: center;
+}
+.rated-ilustration {
+    margin-top: 1rem;
+}
+.rated-result {
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        background-color: #262f38;
+        color: rgb(251, 116, 19);
+
+        font-family: "Overpass";
+        font-weight: 400;
+        font-size: 14px;
+
+        padding: 5px 15px 4px 15px;
+        border-radius: 15px;
+    }
+}
+
+// Responsive
+@media only screen and (max-width: 400px) {
+    .rating, .rated {
+        max-width: 13rem;
+        min-height: 12rem;
+    }
+    .rating-vote {
+        width: 30px;
+        height: 30px;
+        padding: .01px;
+    }
+    .rating-submit {
+        width: 13rem;
+    }    
+}
