@@ -28,7 +28,7 @@ body {
     transform: translate(-50%, -50%);
 
     border-radius: 25px;
-    max-width: 20rem;
+    width: 20rem;
     min-height: 19rem;
     padding: 2rem;    
 }
@@ -145,7 +145,7 @@ body {
 // Responsive
 @media only screen and (max-width: 400px) {
     .rating, .rated {
-        max-width: 15rem;
+        width: 15rem;
         min-height: 14rem;
     }
     .rating-vote {
@@ -159,7 +159,7 @@ body {
 }
 @media only screen and (max-width: 280px) {
     .rating, .rated {
-        max-width: 13rem;
+        width: 13rem;
         min-height: 12rem;
     }
     .rating-submit {
