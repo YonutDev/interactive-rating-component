@@ -145,13 +145,22 @@ body {
 // Responsive
 @media only screen and (max-width: 400px) {
     .rating, .rated {
-        max-width: 13rem;
-        min-height: 12rem;
+        max-width: 15rem;
+        min-height: 14rem;
     }
     .rating-vote {
         width: 30px;
         height: 30px;
         padding: .01px;
+    }
+    .rating-submit {
+        width: 15rem;
+    }    
+}
+@media only screen and (max-width: 280px) {
+    .rating, .rated {
+        max-width: 13rem;
+        min-height: 12rem;
     }
     .rating-submit {
         width: 13rem;
